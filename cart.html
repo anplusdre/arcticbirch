@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="style/css/skippr.css">
+    <link rel="stylesheet" href="style/css/jquery.bxslider.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <!--    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/skippr.js"></script>
+
+</head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<body>
+    <div class="paymentModule">
+        <div class="cart">
+            <div class="basket">
+                <div class="basket-module">
+                    <h1>Shopping Cart</h1>
+                    <!--
+                <label for="promo-code">Enter a promotional code</label>
+                <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+                <button class="promo-code-cta">Apply</button>
+-->
+                </div>
+                <!--<div class="basket-labels">
+                <ul>
+                    <li class="item item-heading">Item</li>
+                    <li class="price">Price</li>
+                    <li class="quantity">Quantity</li>
+                    <li class="subtotal">Subtotal</li>
+                </ul>
+            </div>-->
+                <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="/assets/images/birch01.png" alt="Placholder Image 2" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                            <h1><strong><span class="item-quantity">4</span> x Pure Sap</strong></h1>
+                            <p>Arctic Birch Original Taste</p>
+                            <!--                        <p>Product Code - 232321939</p>-->
+                        </div>
+                    </div>
+                    <div class="price">51000</div>
+                    <div class="quantity">
+                        <input type="number" value="4" min="1" class="quantity-field">
+                    </div>
+                    <div class="subtotal">51000</div>
+                    <div class="remove">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="/assets/images/birch02.png" alt="Placholder Image 2" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                            <h1><strong><span class="item-quantity">1</span> x Wild BilBerries</strong></h1>
+                            <p>Arctic Birch Original Taste</p>
+                            <!--                        <p>Product Code - 232321939</p>-->
+                        </div>
+                    </div>
+                    <div class="price">51000</div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1" class="quantity-field">
+                    </div>
+                    <div class="subtotal">51000</div>
+                    <div class="remove">
+                        <button></button>
+                    </div>
+                </div>
+
+                <div class="summary">
+                    <div class="continueShop">
+                        <a href="shop.html"><img src="assets/icon/back.svg">Continue Shopping</a>
+                    </div>
+                    <div class="summary-total">
+                        <div class="total-title">Total</div>
+                        <div class="total-value final-value" id="basket-total">102000</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <aside class="payment">
+            <div class="paymentInfo">
+                <h1><label>Payment</label></h1>
+                <div class="formPayment">
+
+                    <div class="payments type">
+                        <h5>Payment Type</h5>
+                        <select class="cards">
+                            <option value=" " selected>Select</option>
+                            <option value="visa">Visa</option>
+                            <option value="mc">Master Card</option>
+                        </select>
+                    </div>
+
+
+                    <div class="payments name">
+                        <h5>Card Number</h5>
+                        <input class="inputText" type="text" name="name" placeholder=" ">
+                    </div>
+
+                    <div class="payments number">
+                        <h5>Name on Card</h5>
+                        <input class="inputText" type="text" name="name" placeholder=" ">
+                    </div>
+
+                    <div class="payments exp">
+                        <div class="crudetails">
+
+                            <div class="expiration">
+                                <h5>Expiration Date</h5>
+                                <input class="inputText short date" type="text" name="name" placeholder="06/21" maxlength="5">
+                            </div>
+
+                            <span>-</span>
+                            <div class="expiration">
+                                <h5>CCV</h5>
+                                <input class="inputText short ccv" type="text" name="name" placeholder="000" maxlength="3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payments submit">
+                        <button class="checkoutBtn">Checkout</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--<div class="paymentInfo">
+                 <h1><label>Details</label></h1>
+                <div class="formPayment">
+                    <div class="payments method">
+                        <h5>Name on Card</h5>
+                        <input class="inputText" type="text" name="name" placeholder="Type your name on the card">
+                    </div>
+
+                </div>
+            </div>-->
+
+
+        </aside>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 800,
+            delay: 300,
+            once: true,
+            disable: 'mobile'
+        });
+
+        function validate() {
+            var inputsWithValues = 0;
+
+            // get all input fields except for type='submit'
+            var myInputs = $("input:not('.checkoutBtn')");
+
+            myInputs.each(function(e) {
+                // if it has a value, increment the counter
+                if ($(this).val()) {
+                    inputsWithValues += 1;
+                }
+            });
+
+            if (inputsWithValues == myInputs.length) {
+                $(".checkoutBtn").prop("disabled", false);
+            } else {
+                $(".checkoutBtn").prop("disabled", true);
+            }
+        }
+
+        $(document).ready(function() {
+
+            $('select').customSelectBox().change(function() {
+                // Do something with `$(this).val()` !
+
+
+                //                if ($(this).val() == $(this).siblings('ul').children('li').attr('data-value')) {
+                // $(this).next('span').addClass('visa')
+                // }
+
+            });
+
+            $('.checkoutBtn').click(function() {
+                window.location.href = '/information.html';
+                return false;
+            });
+
+
+            validate();
+            $('.inputText').on('keyup', validate);
+
+            $('input[type=text].inputText').on("input", function(e) {
+                if ($(this).val().length == $(this).attr("maxlength")) {
+                    $(event.target).parents('.expiration').siblings('.expiration').find('.ccv').focus();
+                } else {
+                    return false;
+
+                }
+                if ($('.ccv').val().length == $(this).attr("maxlength")) {}
+
+            });
+
+            $("input[type=text].date").keyup(function(e) {
+                var textSoFar = $(this).val();
+                if (e.keyCode != 191) {
+                    if (e.keyCode != 6) {
+                        if (textSoFar.length == 2 || textSoFar.length == 2) {
+                            $(this).val(textSoFar + "/");
+                        }
+                        //to handle copy & paste of 8 digit
+                        else if (e.keyCode == 86 && textSoFar.length == 2) {
+                            $(this).val(textSoFar.substr(0, 2) + "/" + textSoFar.substr(2, 2) + "/" + textSoFar.substr(4, 4));
+                        }
+                    } else {
+                        //backspace would skip the slashes and just remove the numbers
+                        if (textSoFar.length == 2) {
+                            $(this).val(textSoFar.substring(0, 4));
+                        } else if (textSoFar.length == 2) {
+                            $(this).val(textSoFar.substring(0, 1));
+                        }
+                    }
+                } else {
+                    //remove slashes to avoid 12//01/2014
+                    $(this).val(textSoFar.substring(0, textSoFar.length - 1));
+                }
+            });
+
+
+        });
+
+
+        (function(a) {
+            a.fn.customSelectBox = function(b) {
+                b = a.extend({
+                    selectboxClass: "styled-select",
+                    buttonClass: "curr",
+                    selectedClass: "selected",
+                    disabledClass: "disabled",
+                    focusedClass: "focused"
+                }, b);
+                return this.each(function() {
+                    var g = a(this),
+                        c = 0;
+                    g.css("visibility", "hidden").wrap('<div class="' + b.selectboxClass + '"></div>');
+                    var d = g.parent(),
+                        f = d.find("option"),
+                        e = g.find("option:selected").html();
+                    d.append('<span class="' + b.buttonClass + '">' + e + '</span><ul style="display:none;"></ul>');
+                    f.each(function(l) {
+                        var k = a(this),
+                            m = k.val() ? k.val() : k.html(),
+                            h = k.html(),
+                            j = k.is(":selected") ? b.selectedClass : k.is(":disabled") ? b.disabledClass : "";
+                        d.find("ul").append('<li class="' + j + " o-" + l + '" data-value="' + m + '">' + h + "</li>")
+                    });
+                    d.find("." + b.buttonClass).on("mousedown", function(h) {
+                        a("." + b.selectboxClass + " ." + b.focusedClass).removeClass(b.focusedClass).next().hide();
+                        if (c == 1) {
+                            a(this).removeClass(b.focusedClass).next().hide();
+                            c = 0
+                        } else {
+                            a(this).addClass(b.focusedClass).next().show();
+                            c = 1
+                        }
+                        h.stopPropagation();
+                        a(document).on("mousedown", function() {
+                            a("." + b.selectboxClass + " ." + b.focusedClass).removeClass(b.focusedClass).next().hide();
+                            c = 0
+                        })
+                    }).next().find("li").on("mousedown", function() {
+                        if (!a(this).hasClass(b.disabledClass)) {
+                            a(this).parent().hide().find("." + b.selectedClass).removeClass(b.selectedClass).parent().prev().removeClass(b.focusedClass).text(a(this).text()).prev().val(a(this).data("value")).trigger("change");
+                            a(this).addClass(b.selectedClass)
+                        }
+                        c = 1
+                    })
+                })
+            }
+        })(jQuery);
+    </script>
+</body></html>

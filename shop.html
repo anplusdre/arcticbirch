@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="style/css/skippr.css">
+    <link rel="stylesheet" href="style/css/jquery.bxslider.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <!--    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/skippr.js"></script>
+
+</head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<body>
+    <!-- Header -->
+    <div class="shop">
+        <div class="twinBar">
+            <div class="shopbar">
+                <div class="logo"><a href="index.html"><img src="assets/icon/logoshop.svg"></a></div>
+
+                <div class="navigation">
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">Pure Sap</li>
+                        <li class="tab-link" data-tab="tab-2">Wild Bilberries</li>
+                    </ul>
+                    <!--<div class="vertical-tab">
+                        <section id="section1">
+                            <input type="radio" name="sections" id="option1" checked>
+
+                            <label for="option1">Pure SAP</label>
+                            <article>
+                                
+                            </article>
+                        </section>
+                        <section id="section2">
+                            <input type="radio" name="sections" id="option2">
+                            <label for="option2">Wild Bilberries</label>
+                            <article>
+                                <div class="slide-cover">
+                                    <div class="slider2">
+                                        <div> <img src="assets/images/birch02.png"></div>
+                                        <div> <img src="assets/images/birch02.png"></div>
+                                        <div> <img src="assets/images/birch02.png"></div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="twinBar grey">
+
+            <div class="shopCart">
+                <a href="cart.html">
+                    <p><b class="countItem">0</b> Items</p><span></span>
+                </a>
+            </div>
+
+            <div id="tab-1" class="tab-content current">
+                <div class="shopItem">
+                    <div class="slide-cover">
+                        <div class="slider">
+                            <div> <img src="assets/images/birch01.png"></div>
+                            <div> <img src="assets/images/birch01.png"></div>
+                            <div> <img src="assets/images/birch01.png"></div>
+                        </div>
+                    </div>
+
+                    <div class="shopDetails">
+                        <div class="items">
+                            <div class="shopTitle">
+                                Pure Sap
+                            </div>
+
+                            <div class="shopPrice">
+                                51.000
+                            </div>
+
+                            <div class="shopDesc">
+                                Birch sap is tapped directly from the birch tree. It’s slightly sweet with a silky texture. Our organic birch sap contains only naturally occurring antioxidants, electrolytes, trace minerals, xylitol, fructose and vitamin C. You can drink it as such – preferably chilled.
+                            </div>
+
+                            <div class="shopQuantity">
+                                <form id='myform' method='POST' action='#'>
+                                    <input type='button' value='-' class='count qtyminus disabled' field='quantity' />
+                                    <input type='text' name='quantity' value='1' class='qty' />
+                                    <input type='button' value='+' class='count qtyplus' field='quantity' />
+                                </form>
+                                <button class="prime addCart">
+                                    ADD TO CART
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="tab-2" class="tab-content">
+                <div class="shopItem">
+                    <div class="slide-cover">
+                        <div class="slider" aria-hidden="true">
+                            <div> <img src="assets/images/birch02.png"></div>
+                            <div> <img src="assets/images/birch02.png"></div>
+                            <div> <img src="assets/images/birch02.png"></div>
+                        </div>
+                    </div>
+
+                    <div class="shopDetails">
+                        <div class="items">
+                            <div class="shopTitle">
+                                Pure Sap & Wild Bilberries
+                            </div>
+
+                            <div class="shopPrice">
+                                51.000
+                            </div>
+
+                            <div class="shopDesc">
+                                Birch sap is tapped directly from the birch tree. It’s slightly sweet with a silky texture. Our organic birch sap contains only naturally occurring antioxidants, electrolytes, trace minerals, xylitol, fructose and vitamin C. You can drink it as such – preferably chilled.
+                            </div>
+
+                            <div class="shopQuantity">
+                                <form id='myform' method='POST' action='#'>
+                                    <input type='button' value='-' class='count qtyminus disabled' field='quantity' />
+                                    <input type='text' name='quantity' value='0' class='qty' />
+                                    <input type='button' value='+' class='count qtyplus' field='quantity' />
+                                </form>
+                                <button class="prime addCart">
+                                    ADD TO CART
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Content -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 800,
+            delay: 300,
+            once: true,
+            disable: 'mobile'
+        });
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                mode: 'vertical',
+                controls: 'false'
+            });
+        });
+    </script>
+</body></html>

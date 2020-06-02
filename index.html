@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="style/css/skippr.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="style/css/vex.css" />
+    <link rel="stylesheet" href="style/css/vex-theme-wireframe.css" />
+    <!--    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <script src="js/jquery.js"></script>
+    <script src="js/vex.combined.js"></script>
+
+</head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<body>
+
+    <div id="contactData" style="display: none;">
+        <h1>Tired of having no control over your dialogs?</h1>
+        <div class="reveal">
+            <p>With vex, you can customize everything:</p>
+            <ul>
+                <li>Styling of all UI elements</li>
+                <li>Themes</li>
+                <li>Behaviors and timing</li>
+                <li>Animations and effects</li>
+            </ul>
+            <p>All options can be configured for all dialogs<br>or on a per-dialog basis.</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="head">
+            <div class="cover">
+                <div class="col-md-3">
+                    <div class="logo"><a href="index.html"><img src="assets/Logo_Arctic_Birch.png"></a></div>
+                </div>
+                <div class="col-md-9">
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a><span>About</span></a>
+                            </li>
+                            <li><a class="greenCounter" href="shop.html">Shop
+                                    <!--
+                                    <div class="counter">
+                                        <div class="chartCounter">0</div>
+                                    </div>
+-->
+                                </a></li>
+                            <li><a href="#">Product</a></li>
+                            <li>
+                                <a>
+                                    <span class="contacts" href="#">Contact</span>
+                                </a>
+                                <pre style="display: none;" class="messages">
+                                    <h1>Tester</h1>
+                                </pre>
+                            </li>
+                        </ul>
+
+                        <!--                            <span class="close" href="#"></span>-->
+                    </div>
+                    <!--<div class="navbar">
+                            <ul class="navtop">
+                                <li class="dropdown"><a href="#"><img src="assets/icon/hamburger.svg"></a>
+
+                                </li>
+                                <li><a href="shop.html">SHOP</a></li>
+                            </ul>
+                        </div>-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div class="main">
+        <div class="grid-hero">
+            <div class="showcase">
+                <div class="container">
+                    <div class="prdImg">
+                        <div class="patch"></div>
+                        <!--
+                        <video id="animated" onloadeddata="this.play();" poster="./assets/images/poster.png" playsinline loop muted>
+                            <source src="./assets/animation.mp4" type="video/mp4" />
+                        </video>
+-->
+
+                        <img class="heroGif" src="assets/animation.gif">
+                        <script>
+                            setTimeout(function() {
+                                $('<img class="heroGif" src="assets/animation.gif">');
+                            }, 5000);
+                        </script>
+                        <!--<div class="ecl">
+                            <img src="assets/eclipse.svg">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section -->
+        <div class="section section02">
+            <div class="benefit">
+                <div class="contents">
+                    <div class="grid flex">
+
+                        <div class="col">
+                            <div class="card"><img src="assets/icon/tree.svg">
+                                <div class="title" data-aos="zoom-in-right">Product of Nature</div>
+                                <span data-aos="zoom-in-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis ultricies nulla at semper. Integer sit amet arcu in sem placerat vehicula id in tellus.</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card"><img src="assets/icon/health.svg">
+                                <div class="title" data-aos="zoom-in-right">Health Benefit</div>
+                                <span data-aos="zoom-in-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis ultricies nulla at semper. Integer sit amet arcu in sem placerat vehicula id in tellus.</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card"><img src="assets/icon/Super.svg">
+                                <div class="title" data-aos="zoom-in-right">Super Drink</div>
+                                <span data-aos="zoom-in-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis ultricies nulla at semper. Integer sit amet arcu in sem placerat vehicula id in tellus.</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card"><img src="assets/icon/nature.svg">
+                                <div class="title" data-aos="zoom-in-right">Naturally Rare</div>
+                                <span data-aos="zoom-in-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis ultricies nulla at semper. Integer sit amet arcu in sem placerat vehicula id in tellus.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="grid white col-md-6">
+                            <div class="showcase leftSide">
+
+                                <div class="container">
+                                    <div class="subGrid">
+
+                                        <div class="col-md-4">
+                                            <div class="prdImg">
+                                                <img src="assets/images/product01.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <!-- <div class="title" data-aos="fade-in">
+                                                PURE SAP
+                                            </div>-->
+
+                                            <div class="anim_text">
+                                                <img src="assets/images/anim_bps.gif">
+                                            </div>
+                                            <!--<div class="description" data-aos="faide-in">
+                                                Arctic Birch has been able to develop an aseptic package for bulk shipments. No additives used and none frozen. This has been possible with the help of the latest research and equipment, combined with rigorous food hygiene. This is a huge step for the company and a great possibility for others to implement a new fantastic ingredient into their products. Birch sap is a superb added value ingredient in a variety of applications such as beer, sodas and cosmetics among others.
+                                            </div>-->
+
+                                            <!--                                    <div class="button primary">SHOP NOW</div>-->
+                                            <!--
+                                                <button class="animatedBtn" style="--content: 'SHOP NOW';background: #222;
+        box-shadow: rgb(6, 96, 51) 2px 2px 22px;">
+                                                    <div class="left"></div>
+                                                    SHOP NOW
+                                                    <div class="right"></div>
+                                                </button>
+-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid black col-md-6">
+                            <div class="showcase rightSide">
+                                <div class="container">
+                                    <div class="subGrid">
+                                        <div class="col-md-8">
+                                            <div class="anim_text">
+                                                <img src="assets/images/anim_wbb.gif">
+                                            </div>
+                                            <!--
+                                            <div class="title" style="text-align: right" data-aos="fade-in">
+                                                PURE SAP & WILD BILBERRIES
+                                            </div>
+
+                                            <div class="description" style="text-align: right" data-aos="faide-in">
+                                                Arctic Birch has been able to develop an aseptic package for bulk shipments. No additives used and none frozen. This has been possible with the help of the latest research and equipment, combined with rigorous food hygiene. This is a huge step for the company and a great possibility for others to implement a new fantastic ingredient into their products. Birch sap is a superb added value ingredient in a variety of applications such as beer, sodas and cosmetics among others.
+                                            </div>
+
+                                            <button class="animatedBtn" style="--content: 'SHOP NOW'; float: right;">
+                                                <div class="left"></div>
+                                                SHOP NOW
+                                                <div class="right"></div>
+                                            </button>
+-->
+                                        </div>
+
+                                        <div class="col-md-4" style="text-align: right">
+                                            <div class="prdImg">
+                                                <img src="assets/images/birch02.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="section section03">
+            <div class="nutrition">
+                <div class="birchvector">
+                    <div class="nutrilist">
+
+                        <div class="col-md-3 listing">
+                            <div class="title">ZINC
+                            </div>
+                            <div class="span">Zinc is found in cells throughout the body. It helps the immune system fight off invading bacteria and viruses.</div>
+                        </div>
+                        <div class="col-md-3 listing">
+                            <div class="title">MAGNESIUM
+                            </div>
+                            <div class="span">Magnesium is important for many processes in the body, including regulating muscle and nerve function, blood sugar levels, and blood pressure and making protein, bone, and DNA.</div>
+                        </div>
+                        <div class="col-md-3 listing">
+                            <div class="title">ZINC
+                            </div>
+                            <div class="span">Zinc is found in cells throughout the body. It helps the immune system fight off invading bacteria and viruses.</div>
+                        </div>
+                        <div class="col-md-3 listing">
+                            <div class="title">ZINC
+                            </div>
+                            <div class="span">Zinc is found in cells throughout the body. It helps the immune system fight off invading bacteria and viruses.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="teaserVid">
+            <video onloadeddata="this.play();" poster="./assets/images/poster.png" playsinline loop muted>
+                <source src="./assets/abi.mp4" type="video/mp4" />
+                <!--                <source src="/path/to/video.webm" type="video/webm" />-->
+
+            </video>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="greyBg">
+            <div class="sitemap">
+                <div class="sitemaphead">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis feugiat ligula eu lacinia. Mauris laoreet libero auctor lacus viverra porttitor. Praesent tincidunt, lacus eget ultrices aliquet, urna lectus cursus elit, non vulputate ipsum est vitae nunc. Ut quis luctus sapien, at sagittis tortor. Phasellus egestas, arcu eu suscipit dictum, lacus libero pulvinar arcu, id placerat tortor lorem in erat. Aliquam erat volutpat. Vestibulum sit amet tincidunt nulla. Duis feugiat mollis magna. In hac habitasse platea dictumst. Sed purus felis, dignissim id metus sit amet, ultricies suscipit augue.</p>
+                    <div class="separator"></div>
+                </div>
+                <div class="container footerTight">
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                Shop
+                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                About
+                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                Process
+                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                Terms & Condition
+                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--test-->
+                <div class="details">
+                    <div class="support">For more information. Call us on 021-800-388</div>
+                    <div class="container">
+                        <div class="col-md-5">
+                            <div class="copy">Copyright © 2019 PT Arctic Birch Indonesia. All rights reserved.</div>
+                        </div>
+                        <div class="col-md-7">
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sales and Refunds</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Legal Site Map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 800,
+            delay: 300,
+            once: true,
+            disable: 'mobile'
+        });
+    </script>
+</body></html>
