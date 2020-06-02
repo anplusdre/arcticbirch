@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,600i,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'gothic';
+    //  src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('/assets/font/gothic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        //       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        //       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+
+        //       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 $black: #58595B;
 $green: #008B45;
 
@@ -50,6 +62,10 @@ video {}
     .col {
         flex: 1;
     }
+}
+
+.greyz {
+    background: #f5f5f5;
 }
 
 .benefit {
@@ -564,6 +580,95 @@ header {
             letter-spacing: 1px;
         }
     }
+
+    .promobar {
+        font-size: 14px;
+        font-weight: 500;
+        //        font-family: 'gothic';
+        line-height: 40px;
+        width: 100%;
+        background: rgba(0, 139, 69, 0.16);
+        color: rgb(0, 139, 69);
+        text-align: center;
+    }
+
+    .productList {
+        padding: 80px 16%;
+        display: flex;
+        flex-direction: row;
+        background: #f5f5f5;
+
+        .product {
+            text-align: center;
+            flex: 1 1 auto;
+            width: 50%;
+
+            .productImage {
+                padding: 0px 160px;
+                margin-bottom: 40px;
+
+                img {
+                    height: 280px;
+                }
+            }
+
+            .productName {
+                font-size: 32px;
+                margin-bottom: 16px;
+                font-family: gothic;
+            }
+
+            .productPrice {
+                font-size: 16px;
+                position: relative;
+                color: black;
+                width: 148px;
+                margin: 8px auto 40px auto;
+
+                .rp::before {
+                    content: "Rp";
+                    left: 0;
+                    margin-right: 12px;
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                }
+            }
+
+            button {
+                background: none;
+                border: 0;
+                line-height: 47px;
+                height: 47px;
+                width: 124px;
+                border-radius: 4px;
+                border: 1px solid transparent;
+            }
+
+            .shopNow {
+                background: #000;
+                color: #fff;
+            }
+
+            .addCart {
+                background: none;
+                border: 1px solid #666;
+            }
+        }
+    }
+}
+
+
+footer {
+
+    .paymentIcon {
+        background: #222;
+        color: #fff;
+        width: 100%;
+        height: 64px;
+
+        img {}
+    }
 }
 
 .hero-image {
@@ -789,341 +894,7 @@ header {
     flex-direction: row;
 }
 
-.shop {
-    display: flex;
 
-    .twinBar {
-        min-width: calc(20% - 19px);
-        height: 100%;
-        min-height: 100%;
-        position: relative;
-        background: #fff;
-
-
-
-        ul.tabs {
-            display: flex;
-            flex-direction: column;
-        }
-
-        ul.tabs li {
-            background: none;
-            cursor: pointer;
-            line-height: 64px;
-            font-weight: 700;
-            text-align: left;
-            padding-left: 63px;
-        }
-
-        ul.tabs li.current {
-            background: #FAFAFA;
-            color: $green;
-            display: block;
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.current {
-            display: inherit;
-        }
-
-
-        .shopbar {
-            text-align: center;
-            width: 285px;
-
-            .logo {
-                display: block;
-                background: #FAFAFA;
-                line-height: 120px;
-            }
-
-            .navigation {
-                margin-top: 80px;
-
-                h1 {
-                    color: #333;
-                    margin: 1em auto;
-                }
-
-
-
-                .vertical-tab {
-                    color: #333;
-                    display: block;
-                    margin: auto;
-                    position: relative;
-                }
-
-                .vertical-tab input[name="sections"] {
-                    left: -9999px;
-                    position: absolute;
-                    top: -9999px;
-                }
-
-                .vertical-tab section {
-                    display: block;
-                    height: 56px;
-                    line-height: normal;
-                }
-
-                .vertical-tab section label {
-                    background: #fff;
-                    color: $black;
-                    //                    border-right: 2px solid #ccc;
-                    cursor: pointer;
-                    text-align: left;
-                    display: block;
-                    font-size: 14px;
-                    font-weight: bold;
-                    padding: 19px 50px;
-                    position: relative;
-                    z-index: 100;
-                }
-
-                .vertical-tab section article {
-                    display: none;
-                    left: 286px;
-                    min-width: 300px;
-                    padding: 0 0 0 56px;
-                    position: absolute;
-                    top: 0;
-                }
-
-                .vertical-tab section article:after {
-                    background-color: #fff;
-                    bottom: 0;
-                    content: "";
-                    display: block;
-                    left: -229px;
-                    position: absolute;
-                    top: 0;
-                    width: 220px;
-                    z-index: 1;
-                }
-
-                .vertical-tab input[name="sections"]:checked + label {
-                    background: #FAFAFA;
-                    //                    border-right: 2px solid #000;
-                    color: $green;
-                }
-
-                .vertical-tab input[name="sections"]:checked ~ article {
-                    display: block;
-                }
-
-
-                @media (max-width: 533px) {
-
-                    h1 {
-                        width: 100%;
-                    }
-
-                    .vertical-tab {
-                        width: 100%;
-                    }
-
-                    .vertical-tab section label {
-                        font-size: 1em;
-                        width: 160px;
-                    }
-
-                    .vertical-tab section article {
-                        left: 200px;
-                        min-width: 270px;
-                    }
-
-                    .vertical-tab section article:after {
-                        background-color: #ccc;
-                        bottom: 0;
-                        content: "";
-                        display: block;
-                        left: -199px;
-                        position: absolute;
-                        top: 0;
-                        width: 200px;
-
-                    }
-
-                }
-
-
-
-
-
-
-            }
-        }
-    }
-
-    .shopCart {
-        text-align: right;
-        padding: 56px 0;
-        position: absolute;
-        right: 64px;
-
-        a {
-            display: block;
-            height: 40px;
-            width: 120px;
-            position: relative;
-            text-align: right;
-            transition: .6s ease-in-out;
-
-            span {
-                position: absolute;
-                left: 0;
-                top: 0;
-                background: $black;
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                transition: 1s ease-in-out;
-            }
-
-            span::after {
-                content: "";
-                background-image: url(/assets/icon/chart.svg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                width: 16px;
-                height: 16px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            p {
-                opacity: 0;
-                font-weight: 600;
-                font-size: 13px;
-                color: #007AFF;
-                position: absolute;
-                left: -25px;
-                top: -3px;
-            }
-
-        }
-
-        a:hover {
-            width: 165px;
-            text-align: left;
-        }
-
-        a:hover p {
-            display: block;
-            left: 52px;
-        }
-
-        a:hover > span {}
-
-
-    }
-
-    .addIn {
-        width: 165px !important;
-        text-align: left;
-    }
-
-    .shopDetails {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-self: center;
-
-
-
-        .items {
-            padding-left: 80px;
-            margin-top: -140px;
-
-            .shopTitle {
-                font-size: 32px;
-                font-weight: 900;
-                color: $black;
-                margin-bottom: 16px;
-            }
-
-            .shopPrice {
-                color: $green;
-                font-weight: 800;
-                font-size: 21px;
-                margin-bottom: 40px;
-            }
-
-            .shopPrice::before {
-                content: "Rp";
-
-            }
-
-            .shopDesc {
-                padding-right: 80px;
-                line-height: 22px;
-                margin-bottom: 40px;
-            }
-
-            .shopQuantity {
-
-                display: flex;
-                flex-direction: row;
-
-                #myform {
-                    text-align: center;
-                    font-size: 15px;
-                    margin-right: 16px;
-                }
-
-                .qty {
-                    text-align: center;
-                    width: 74px;
-                    height: 48px;
-                    font-weight: 600;
-
-                    background: #FFFFFF;
-                    border: 1px solid #E5E5E5;
-                    border-radius: 4px;
-                }
-
-                .disabled {
-                    color: #CBD3DB;
-                    background: #F2F2F2;
-                }
-
-                .count {
-
-                    width: 48px;
-                    height: 48px;
-                    border-radius: 4px;
-                    border: 0;
-                    margin: 0 4px;
-                }
-
-                input.qtyplus {
-                    color: $green;
-                    background: #fff;
-                    border: 1px solid #E5E5E5;
-                }
-
-                input.qtyminus {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
-
-}
-
-.addCart {
-    width: 164px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height, or 150% */
-    letter-spacing: 1px;
-}
 
 .teaserVid {
     width: 100%;
