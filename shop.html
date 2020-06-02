@@ -10,159 +10,207 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/css/main.css">
-    <link rel="stylesheet" href="style/css/skippr.css">
-    <link rel="stylesheet" href="style/css/jquery.bxslider.css">
-    <link rel="icon" type="image/x-icon" href="" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon/fav.ico" />
+    <!-- -->
+    <link rel="stylesheet" href="style/css/vex.css" />
+    <link rel="stylesheet" href="style/css/vex-theme-wireframe.css" />
     <!--    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
     <script src="js/jquery.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
-    <script src="js/skippr.js"></script>
+    <script src="js/vex.combined.js"></script>
 
 </head>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<body>
+<body class="greyz">
     <!-- Header -->
-    <div class="shop">
-        <div class="twinBar">
-            <div class="shopbar">
-                <div class="logo"><a href="index.html"><img src="assets/icon/logoshop.svg"></a></div>
-
-                <div class="navigation">
-                    <ul class="tabs">
-                        <li class="tab-link current" data-tab="tab-1">Pure Sap</li>
-                        <li class="tab-link" data-tab="tab-2">Wild Bilberries</li>
-                    </ul>
-                    <!--<div class="vertical-tab">
-                        <section id="section1">
-                            <input type="radio" name="sections" id="option1" checked>
-
-                            <label for="option1">Pure SAP</label>
-                            <article>
-                                
-                            </article>
-                        </section>
-                        <section id="section2">
-                            <input type="radio" name="sections" id="option2">
-                            <label for="option2">Wild Bilberries</label>
-                            <article>
-                                <div class="slide-cover">
-                                    <div class="slider2">
-                                        <div> <img src="assets/images/birch02.png"></div>
-                                        <div> <img src="assets/images/birch02.png"></div>
-                                        <div> <img src="assets/images/birch02.png"></div>
+    <div id="contactData" style="display: none;">
+        <h1>Tired of having no control over your dialogs?</h1>
+        <div class="reveal">
+            <p>With vex, you can customize everything:</p>
+            <ul>
+                <li>Styling of all UI elements</li>
+                <li>Themes</li>
+                <li>Behaviors and timing</li>
+                <li>Animations and effects</li>
+            </ul>
+            <p>All options can be configured for all dialogs<br>or on a per-dialog basis.</p>
+        </div>
+    </div>
+    <header>
+        <div class="head">
+            <div class="cover">
+                <div class="col-md-3 col-sm-3">
+                    <div class="logo"><a href="index.html"><img src="assets/Logo_Arctic_Birch.png"></a></div>
+                </div>
+                <div class="col-md-9 col-sm-9">
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a><span>About</span></a>
+                            </li>
+                            <li><a class="greenCounter" href="#">Shop
+                                    <!--
+                                    <div class="counter">
+                                        <div class="chartCounter">0</div>
                                     </div>
-                                </div>
-                            </article>
-                        </section>
-                    </div>-->
+-->
+                                </a></li>
+                            <!--                            <li><a href="#">Product</a></li>-->
+                            <li>
+                                <a>
+                                    <span class="contacts" href="#">Contact</span>
+                                </a>
+                                <pre style="display: none;" class="messages">
+                                    <h1>Tester</h1>
+                                </pre>
+                            </li>
+                        </ul>
+
+                        <!--                            <span class="close" href="#"></span>-->
+                    </div>
+                    <!--<div class="navbar">
+                            <ul class="navtop">
+                                <li class="dropdown"><a href="#"><img src="assets/icon/hamburger.svg"></a>
+
+                                </li>
+                                <li><a href="shop.html">SHOP</a></li>
+                            </ul>
+                        </div>-->
                 </div>
             </div>
         </div>
-        <div class="twinBar grey">
+    </header>
 
-            <div class="shopCart">
-                <a href="cart.html">
-                    <p><b class="countItem">0</b> Items</p><span></span>
-                </a>
-            </div>
+    <div class="main">
+        <div class="promobar">Get Free Delivery until August 2020</div>
 
-            <div id="tab-1" class="tab-content current">
-                <div class="shopItem">
-                    <div class="slide-cover">
-                        <div class="slider">
-                            <div> <img src="assets/images/birch01.png"></div>
-                            <div> <img src="assets/images/birch01.png"></div>
-                            <div> <img src="assets/images/birch01.png"></div>
-                        </div>
-                    </div>
-
-                    <div class="shopDetails">
-                        <div class="items">
-                            <div class="shopTitle">
-                                Pure Sap
-                            </div>
-
-                            <div class="shopPrice">
-                                51.000
-                            </div>
-
-                            <div class="shopDesc">
-                                Birch sap is tapped directly from the birch tree. It’s slightly sweet with a silky texture. Our organic birch sap contains only naturally occurring antioxidants, electrolytes, trace minerals, xylitol, fructose and vitamin C. You can drink it as such – preferably chilled.
-                            </div>
-
-                            <div class="shopQuantity">
-                                <form id='myform' method='POST' action='#'>
-                                    <input type='button' value='-' class='count qtyminus disabled' field='quantity' />
-                                    <input type='text' name='quantity' value='1' class='qty' />
-                                    <input type='button' value='+' class='count qtyplus' field='quantity' />
-                                </form>
-                                <button class="prime addCart">
-                                    ADD TO CART
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
+        <div class="productList">
+            <div class="product">
+                <div class="productImage">
+                    <img src="assets/images/product01.png">
+                </div>
+                <div class="productName">Pure Sap</div>
+                <div class="productPrice">
+                    <div class="rp"></div>50000
+                </div>
+                <div class="productAction">
+                    <button class="shopNow">Buy Now</button>
+                    <button class="addCart">Add to Cart</button>
                 </div>
             </div>
-            <div id="tab-2" class="tab-content">
-                <div class="shopItem">
-                    <div class="slide-cover">
-                        <div class="slider" aria-hidden="true">
-                            <div> <img src="assets/images/birch02.png"></div>
-                            <div> <img src="assets/images/birch02.png"></div>
-                            <div> <img src="assets/images/birch02.png"></div>
+            <div class="product">
+                <div class="productImage">
+                    <img src="assets/images/birch02.png">
+                </div>
+                <div class="productName">Pure Sap & Wild Bilberries</div>
+                <div class="productPrice">
+                    <div class="rp"></div>65000
+                </div>
+                <div class="productAction">
+                    <button class="shopNow">Buy Now</button>
+                    <button class="addCart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="greyBg">
+
+            <div class="paymentIcon">
+                <img src="#">
+            </div>
+            <div class="sitemap">
+                <div class="sitemaphead">
+                </div>
+                <div class="container footerTight">
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                Shop
+                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="shopDetails">
-                        <div class="items">
-                            <div class="shopTitle">
-                                Pure Sap & Wild Bilberries
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                About
                             </div>
-
-                            <div class="shopPrice">
-                                51.000
-                            </div>
-
-                            <div class="shopDesc">
-                                Birch sap is tapped directly from the birch tree. It’s slightly sweet with a silky texture. Our organic birch sap contains only naturally occurring antioxidants, electrolytes, trace minerals, xylitol, fructose and vitamin C. You can drink it as such – preferably chilled.
-                            </div>
-
-                            <div class="shopQuantity">
-                                <form id='myform' method='POST' action='#'>
-                                    <input type='button' value='-' class='count qtyminus disabled' field='quantity' />
-                                    <input type='text' name='quantity' value='0' class='qty' />
-                                    <input type='button' value='+' class='count qtyplus' field='quantity' />
-                                </form>
-                                <button class="prime addCart">
-                                    ADD TO CART
-                                </button>
-                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
                         </div>
-
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                Process
+                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footerMenu">
+                            <div class="title">
+                                Terms & Condition
+                            </div>
+                            <ul>
+                                <li><a href="#">Birch Water</a></li>
+                                <li><a href="#">Fruit Taste</a></li>
+                                <li><a href="#">Packager</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--test-->
+                <div class="details">
+                    <div class="support">For more information. Call us on 021-800-388</div>
+                    <div class="container">
+                        <div class="col-md-5">
+                            <div class="copy">Copyright © 2019 PT Arctic Birch Indonesia. All rights reserved.</div>
+                        </div>
+                        <div class="col-md-7">
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sales and Refunds</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Legal Site Map</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> <!-- Content -->
+    </footer>
+    <!--
+    <div class="stickyFooter">
+    </div>
+-->
 
     <script type="text/javascript" src="js/script.js"></script>
 
-    <script>
-        AOS.init({
-            easing: 'ease-out-back',
-            duration: 800,
-            delay: 300,
-            once: true,
-            disable: 'mobile'
-        });
-        $(document).ready(function() {
-            $('.slider').bxSlider({
-                mode: 'vertical',
-                controls: 'false'
-            });
-        });
-    </script>
+
 </body></html>
