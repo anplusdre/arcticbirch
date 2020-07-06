@@ -469,6 +469,7 @@ header {
     height: 100%;
     position: relative;
     background: #fbfbfb;
+    scroll-behavior: smooth;
 
     .grid-hero {
         .showcase {
@@ -662,48 +663,64 @@ header {
 
     .contentabout {
         z-index: 99;
+        background: #0F0F0F;
         position: absolute;
         width: 100%;
-        height: 100vh;
+        min-height: 440px;
+        height: 440px;
         text-align: center;
-        transform: translate(-50%, 112px);
+        transform: translate(-50%, 942px);
         left: 50%;
 
         p {
             letter-spacing: 0.12px;
             font-size: 16px;
-            color: #000;
+            color: #fff;
         }
 
         h1 {
             color: #fff;
-            font-size: 40px;
-            font-weight: 900;
-            letter-spacing: 1px;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.56px;
         }
 
         .boxedText {
-            width: 560px;
+            width: 56%;
             margin: 0 auto;
             letter-spacing: 0.24px;
             padding: 40px;
             min-height: 290px;
             font-size: 16px;
-            background: #fff;
-            margin-bottom: 0, 5px;
+            //            background: #fff;
+            margin-bottom: 0.56px;
 
-            .lists {
+            .values {
                 display: flex;
+                padding-top: 48px;
 
-                div:first-child {
+                .lists {
                     text-align: left;
-                }
-
-                p {
-                    font-size: 14px;
+                    min-width: 96px;
                     flex: 1;
-                    margin: 0;
-                    padding: 8px 0;
+                    padding-right: 24px;
+
+                    div:first-child {
+                        text-align: left;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin: 0;
+                        padding-bottom: 4px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+
                 }
 
             }
@@ -714,19 +731,26 @@ header {
                 font-weight: normal;
                 font-size: 12px;
                 font-style: italic;
+                color: #fff;
             }
         }
     }
 
     .overlaybg {
-        background: rgba(0, 0, 0, .72);
+        background: rgba(0, 0, 0, .16);
         position: absolute;
         height: 1180px;
         width: 100%;
     }
 
     .aboutbg {
-        background-image: url(/arcticbirch/assets/images/birchsnow.jpg);
+        //web
+        //        background-image: url(/arcticbirch/assets/images/forest_min.jpg);
+        //local
+        background-image: url(/assets/images/foreste.jpg);
+        //        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
         background-repeat: no-repeat, repeat;
         background-position: center;
         background-size: cover;
@@ -897,13 +921,53 @@ footer {
     width: 100%;
     height: 100%;
     padding-top: 160px;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
     //    margin-top: 320px;
     background: #F8F8F8;
 
 
+
     .benefit {
 
+        .content02 {
+            position: relative;
+            display: table;
+            width: 1089px;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 112px;
+
+            h1 {
+                display: block;
+                //                float: right;
+                text-align: left;
+                font-size: 82px;
+                font-weight: 500;
+                margin: 0;
+                font-family: 'gothic';
+                line-height: 96px;
+            }
+
+            h1:last-child {
+                letter-spacing: 1px;
+            }
+
+            p {
+                margin: 0;
+                text-align: left;
+                font-size: 18px;
+            }
+
+            p:first-child {
+                padding-top: 8px;
+                padding-bottom: 24px;
+            }
+
+            p:last-child {
+                text-align: left;
+                font-size: 18px;
+            }
+        }
 
         .grid {
             height: 100%;
@@ -949,6 +1013,7 @@ footer {
         margin-right: -15px;
         width: 84%;
         margin: 0 auto;
+        margin-bottom: 80px;
 
         .birchvector {
             position: relative;
@@ -964,18 +1029,20 @@ footer {
                 color: #222;
                 letter-spacing: 0.065em;
 
-                .listing {
+                .title {
+                    font-weight: 800;
+                    letter-spacing: 0.24px;
+                    font-size: 24px;
+                    padding-left: 15px;
+                    margin-bottom: 12px;
+                }
 
-                    .title {
-                        font-weight: 800;
-                        letter-spacing: 0.24em;
-                        font-size: 18px;
-                        margin-bottom: 12px;
-                    }
+
+                .listing {
 
                     .span {
                         font-weight: 300;
-                        font-size: 12px;
+                        font-size: 14px;
                         max-width: 255px;
                     }
                 }
