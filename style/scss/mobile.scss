@@ -1,0 +1,54 @@
+// Small Device
+@media only screen and (max-width: 480px) {
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .main .grid-hero .showcase .prdImg {
+        text-align: center;
+
+        .heroGif {
+            height: auto;
+            width: 300px;
+        }
+    }
+
+    .section02 {
+        padding-top: 40px;
+    }
+
+    .section02 .benefit .content02 h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .head .cover {
+        display: none;
+    }
+
+    .m_header {
+        display: block;
+    }
+
+    .logo a img {
+        top: 10px;
+        position: relative;
+        height: 56px;
+    }
+
+    .m_nav {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 99;
+        background: #fff;
+    }
+}

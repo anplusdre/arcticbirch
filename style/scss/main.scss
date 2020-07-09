@@ -249,9 +249,18 @@ header {
     z-index: 3;
 }
 
+.m_header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    display: none;
+    background: #fff;
+}
 
 
 .head {
+    position: relative;
     color: #58595B;
     width: 100%;
     height: 116px;
@@ -667,13 +676,12 @@ header {
         background: #0F0F0F;
         position: absolute;
         width: 100%;
-        min-height: 672px;
-        height: 672px;
+        min-height: 420px;
+        height: 420px;
         text-align: center;
         transform: translate(-50%, 942px);
         left: 50%;
         padding-top: 40px;
-        padding-bottom: 40px;
 
 
         h1 {
@@ -688,6 +696,8 @@ header {
         }
 
         .boxedText {
+            top: -250px;
+            position: relative;
             width: 56%;
             margin: 0 auto;
             letter-spacing: 0.24px;
@@ -1058,9 +1068,94 @@ footer {
 
 }
 
+.m_nav {
+    display: none;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 80px;
+        text-align: center;
+
+        li {
+            display: block;
+            width: 150px;
+            margin: 0 auto;
+            text-align: left;
+
+            a {
+                padding: 16px 0;
+                font-size: 21px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.nav-toggle {
+    position: relative;
+    float: right;
+    top: 24px;
+
+}
+
+.nav-toggle {
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+.nav-toggle.active {
+    z-index: 999;
+}
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 2px;
+    width: 32px;
+    background: #000;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+.nav-toggle span:before {
+    top: -10px;
+}
+
+.nav-toggle span:after {
+    bottom: -10px;
+}
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+
+.nav-toggle.active span {
+    background-color: transparent;
+}
+
+.nav-toggle.active span:before,
+.nav-toggle.active span:after {
+    top: 0;
+}
+
+.nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+.nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
 .section03 {
     //    padding-top: 112px;
-    margin-bottom: 160px;
+    margin-bottom: 140px;
 
     .nutrition {
         display: table;
@@ -2428,3 +2523,5 @@ input[type=text]::placeholder {
         }
     }
 }
+
+@import "mobile.scss";

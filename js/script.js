@@ -116,9 +116,17 @@ $(document).ready(function () {
     /* activate pause for lightbulb video if scrolled out of viewport */
 
 
-
 });
+document.querySelector(".nav-toggle")
+    .addEventListener("click", function () {
+        this.classList.toggle("active");
+        $('.m_nav').toggle('slow');
+    });
 
+//$(".nav-toggle").on('click touchstart', function () {
+//    this.classList.toggle("active");
+//    $('.m_nav').toggle('slow');
+//});
 $(function () {
 
     $('li.dropdown > a').on('click', function (event) {
