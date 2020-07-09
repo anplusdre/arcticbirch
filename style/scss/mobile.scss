@@ -18,6 +18,10 @@
         }
     }
 
+    .main .grid-hero .showcase .prdImg .patch {
+        display: none;
+    }
+
     .section02 {
         padding-top: 40px;
     }
@@ -51,4 +55,137 @@
         z-index: 99;
         background: #fff;
     }
+
+    .section02 .benefit .content02 {
+        text-align: left;
+
+        h1 {
+            text-align: left;
+            line-height: 78px;
+            font-size: 78px;
+            padding-left: 24px;
+        }
+
+        p {
+            padding-left: 24px;
+            max-width: 356px;
+            text-align: left;
+        }
+    }
+
+    .section02 .benefit .grid.flex {
+        padding-bottom: 0;
+    }
+
+    .section02 .benefit .grid .card {
+        img {
+            height: 72px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .grid.flex {
+        display: table;
+
+        .col {
+            margin-bottom: 56px;
+        }
+    }
+
+    .benefit .contents .products .grid .showcase .container .subGrid .prdImg img {
+        height: 240px;
+    }
+
+    .benefit .contents .products .grid .showcase .anim_text img {
+        height: 240px;
+    }
+
+    .benefit .contents .products .grid .showcase.leftSide {
+        padding-left: 0;
+    }
+
+    .benefit .contents .products .grid .showcase.rightSide {
+        padding-right: 0;
+    }
+
+    .benefit .contents .products .grid .showcase .container {
+        width: 375px;
+        max-width: 375px;
+    }
+
+    .subGrid .prdImg {
+        margin-left: 24px;
+    }
+
+    .lastProd {
+        margin-left: -24px;
+    }
+
+    .main .aboutbg {
+        height: 240px;
+        display: none;
+    }
+
+    .main .overlaybg {
+        height: 240px;
+        display: none;
+    }
+
+    .main .contentabout {
+        position: relative;
+        transform: none;
+        left: 0;
+        top: 50px;
+        height: auto;
+    }
+
+    .main .contentabout .boxedText {
+        width: 100%;
+        top: 0;
+        padding: 40px 24px;
+
+        .values {
+            display: table;
+
+            .lists {
+                padding: 16px 0;
+            }
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    .main .contentabout .boxedText .tree::before {
+        display: none;
+    }
+
+    .section03 {
+        margin-bottom: 8px;
+    }
+
+    .greyBg .sitemap {
+        width: 100%;
+        padding: 40px 16px;
+    }
+
+    .details .container ul {
+        display: table;
+        text-align: left;
+        flex-direction: column;
+        margin-right: 0;
+
+        li {
+
+            a {
+                padding: 8px 0;
+                font-size: 14px;
+            }
+        }
+    }
+
 }
