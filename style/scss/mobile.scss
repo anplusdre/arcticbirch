@@ -1,5 +1,5 @@
 // Small Device
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) and (orientation:portrait) {
     html {
         width: 100%;
         overflow-x: hidden;
@@ -7,6 +7,311 @@
 
     body {
         width: 100%;
+    }
+
+    .main .grid-hero .showcase .prdImg {
+        text-align: center;
+        margin-bottom: 24px;
+
+        .heroGif {
+            height: auto;
+            width: 100%;
+            //            margin-left: -173px;
+        }
+    }
+
+    .section02 .benefit .content02 {
+        width: 100%;
+    }
+
+    .main .grid-hero .showcase {
+        padding-top: 0;
+
+        .prdImg {
+            margin-bottom: 0;
+
+            .heroGif {}
+        }
+    }
+
+    .main .grid-hero .showcase .container {
+        padding: 0;
+    }
+
+    .main .grid-hero .showcase .prdImg .patch {
+        display: none;
+    }
+
+    .section02 {
+        padding-top: 40px;
+    }
+
+    .section02 .benefit .content02 h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .head .cover {
+        display: none;
+    }
+
+    .m_header {
+        display: block;
+    }
+
+    .logo a img {
+        top: 10px;
+        position: relative;
+        height: 56px;
+    }
+
+    .m_nav {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 99;
+        background: #fff;
+    }
+
+    .section02 .benefit .content02 {
+        text-align: left;
+
+        h1 {
+            text-align: left;
+            line-height: 78px;
+            font-size: 78px;
+            padding-left: 24px;
+        }
+
+        p {
+            padding-left: 24px;
+            max-width: 356px;
+            text-align: left;
+        }
+    }
+
+    .section02 .benefit .grid.flex {
+        padding-bottom: 0;
+    }
+
+    .section02 .benefit .grid .card {
+        img {
+            height: 72px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .grid.flex {
+        display: table;
+
+        .col {
+            margin-bottom: 56px;
+        }
+    }
+
+    .benefit .contents .products .grid .showcase .container .subGrid .prdImg img {
+        height: 400px;
+        text-align: center;
+    }
+
+    .benefit .contents .products .grid .showcase .anim_text img {
+        height: auto;
+        width: 100%;
+    }
+
+    .benefit .contents .products .grid .showcase.leftSide {
+        padding-left: 0;
+    }
+
+    .benefit .contents .products .grid .showcase.rightSide {
+        padding-right: 0;
+    }
+
+    .benefit .contents .products .grid .showcase .container {
+        width: 375px;
+        max-width: 375px;
+    }
+
+    .subGrid .prdImg {
+        //        margin-left: 24px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .lastProd {
+        //        margin-left: -24px;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .main .aboutbg {
+        display: none;
+    }
+
+    .aboutbg_m {
+        //web
+        background-image: url(/arcticbirch/assets/images/foreste.jpg);
+        //local
+        //        background-image: url(/assets/images/foreste.jpg);
+        //        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: cover;
+        height: 260px;
+        display: block !important;
+    }
+
+    .main .overlaybg {
+        height: 240px;
+        display: none;
+        //        display: none;
+    }
+
+    .main .contentabout {
+        position: relative;
+        transform: none;
+        left: 0;
+        top: -50px;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .main .contentabout .boxedText {
+        width: 100%;
+        top: -70px;
+        padding: 0 24px;
+
+        .values {
+            display: table;
+
+            .lists {
+                padding: 16px 0;
+            }
+        }
+
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    .main .contentabout .boxedText .tree::before {
+        display: none;
+    }
+
+    .section03 {
+        margin-bottom: 0;
+    }
+
+    .greyBg .sitemap {
+        width: 100%;
+        padding: 40px 16px;
+        position: relative;
+        top: -50px;
+        background: #fbfbfb;
+    }
+
+    .details .container ul {
+        display: table;
+        text-align: left;
+        flex-direction: column;
+        margin-right: 0;
+
+        li {
+
+            a {
+                padding: 8px 0;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .section03 .nutrition .birchvector .nutrilist .title {
+        margin-bottom: 24px;
+    }
+
+    .listing {
+        margin-bottom: 24px;
+    }
+
+    //    .listing::before {
+    //        content: "";
+    //        display: inline-block;
+    //        background-color: #008B45;
+    //        height: 6px;
+    //        width: 6px;
+    //        border-radius: 3px;
+    //        margin-right: .5em;
+    //        position: absolute;
+    //        top: 7px;
+    //        left: -8px;
+    //    }
+
+
+    .section03 .nutrition .birchvector .nutrilist .listing .span {
+        max-width: 100%;
+        padding: 16px 16px;
+        border: 2px solid #333;
+        line-height: 150%;
+        background: #fff;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            left: -8px;
+            top: 8px;
+            //            background: #e2e2e2;
+            border-left: 2px solid #333;
+            border-bottom: 2px solid #333;
+        }
+
+        &::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            z-index: 66;
+            background: #008B45;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    .teaserVid {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 375px) and (orientation:landscape) {
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .section02 .benefit .content02 {
+        width: 100%;
+        display: flex;
     }
 
     .main .grid-hero .showcase .prdImg {
