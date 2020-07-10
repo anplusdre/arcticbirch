@@ -11,11 +11,27 @@
 
     .main .grid-hero .showcase .prdImg {
         text-align: center;
+        margin-bottom: 24px;
 
         .heroGif {
             height: auto;
-            width: 300px;
+            width: 100%;
+            //            margin-left: -173px;
         }
+    }
+
+    .main .grid-hero .showcase {
+        padding-top: 0;
+
+        .prdImg {
+            margin-bottom: 0;
+
+            .heroGif {}
+        }
+    }
+
+    .main .grid-hero .showcase .container {
+        padding: 0;
     }
 
     .main .grid-hero .showcase .prdImg .patch {
@@ -96,11 +112,13 @@
     }
 
     .benefit .contents .products .grid .showcase .container .subGrid .prdImg img {
-        height: 240px;
+        height: 400px;
+        text-align: center;
     }
 
     .benefit .contents .products .grid .showcase .anim_text img {
-        height: 240px;
+        height: auto;
+        width: 100%;
     }
 
     .benefit .contents .products .grid .showcase.leftSide {
@@ -117,35 +135,56 @@
     }
 
     .subGrid .prdImg {
-        margin-left: 24px;
+        //        margin-left: 24px;
+        text-align: center;
+        margin-bottom: 24px;
     }
 
     .lastProd {
-        margin-left: -24px;
+        //        margin-left: -24px;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 32px;
     }
 
     .main .aboutbg {
-        height: 240px;
         display: none;
+    }
+
+    .aboutbg_m {
+        //web
+        background-image: url(/arcticbirch/assets/images/foreste.jpg);
+        //local
+        //        background-image: url(/assets/images/foreste.jpg);
+        //        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: cover;
+        height: 260px;
+        display: block !important;
     }
 
     .main .overlaybg {
         height: 240px;
         display: none;
+        //        display: none;
     }
 
     .main .contentabout {
         position: relative;
         transform: none;
         left: 0;
-        top: 50px;
+        top: -50px;
         height: auto;
+        padding-top: 0;
     }
 
     .main .contentabout .boxedText {
         width: 100%;
-        top: 0;
-        padding: 40px 24px;
+        top: -70px;
+        padding: 0 24px;
 
         .values {
             display: table;
@@ -171,6 +210,8 @@
     .greyBg .sitemap {
         width: 100%;
         padding: 40px 16px;
+        position: relative;
+        top: -50px;
     }
 
     .details .container ul {
@@ -245,6 +286,10 @@
             right: 0;
             top: 0;
         }
+    }
+
+    .teaserVid {
+        display: none;
     }
 
 }
